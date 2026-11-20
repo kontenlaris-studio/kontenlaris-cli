@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kontenlaris-cli"
+version = "1.0.0"
+description = "Agent-native CLI for Kontenlaris Studio tools: invoices, summaries, skill security audits, pre-token dataset queries."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+
+[project.scripts]
+kontenlaris = "kontenlaris_cli.main:main"
+
+[tool.setuptools]
+packages = ["kontenlaris_cli"]
